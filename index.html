@@ -1,280 +1,298 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RanGO - Landing Page</title>
+    <title>RanGO — Створення сучасних вебсайтів та цифрових рішень</title>
+    <meta name="description" content="Вебстудія RanGO: розробка адаптивних сайтів, онлайн-маркетинг та швидка підтримка клієнтів.">
+    <link rel="icon" type="image/svg+xml" href="assets/images/sprite.svg">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/main.js" defer></script>
 </head>
 <body>
 
     <header class="header">
         <div class="header-inner">
-            <a href="#" class="logo">Ran<span class="text-orange">GO</span></a>
-            <nav class="nav">
-                <a href="#">Home</a>
-                <a href="#">About Us</a>
-                <a href="#">Services</a>
-                <a href="#">Portfolio</a>
-                <a href="#">Blog</a>
-                <a href="#">Contact</a>
+            <a href="index.html" class="logo">Ran<span class="text-orange">GO</span></a>
+            <nav class="nav" aria-label="Головна навігація">
+                <a href="index.html" class="active">Головна</a>
+                <a href="about.html">Про нас</a>
+                <a href="services.html">Послуги</a>
+                <button type="button" class="btn btn-white" data-open-modal>Зв'язатися</button>
             </nav>
+            <button type="button" class="burger" aria-label="Відкрити меню" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
 
-    <section class="hero">
-        
-        <div class="vertical-sidebar">
-            <div class="sidebar-search">
-                <img src="assets/images/icons/search.png" alt="Search">
-            </div>
+    <main>
+        <section class="hero">
+            <div class="vertical-sidebar">
+                <button type="button" class="sidebar-search" aria-label="Зв'язатися з нами" data-open-modal>
+                    <svg class="icon" aria-hidden="true"><use href="assets/images/sprite.svg#icon-search"></use></svg>
+                </button>
 
-            <div class="sidebar-text-wrap">
-                <div class="sidebar-text">
-                    <p class="sidebar-title">Modern design easy to use</p>
-                    <p class="sidebar-desc">Maecenas id orci rutrum, vehicula nunc sit amet, fringilla ante.<br>Nulla efficitur vitae ligula commodo varius.</p>
+                <div class="sidebar-text-wrap">
+                    <div class="sidebar-text">
+                        <p class="sidebar-title">Сучасний дизайн і простота</p>
+                        <p class="sidebar-desc">Створюємо швидкі та зрозумілі вебрішення,<br>які працюють на результат вашого бізнесу.</p>
+                    </div>
+                </div>
+
+                <div class="sidebar-scroll">
+                    <span class="sidebar-scroll-icon">&raquo;</span>
                 </div>
             </div>
 
-            <div class="sidebar-scroll">
-                <span style="color: white; transform: rotate(90deg); display: block; letter-spacing: -2px; font-weight: bold;">>></span>
+            <div class="hero-content">
+                <span class="subtitle">від RanGO Studio</span>
+                <h1 class="title">GO!</h1>
+                <p class="description">Запустіть свій сучасний вебсайт уже сьогодні!</p>
             </div>
-        </div>
+        </section>
 
-        <div class="hero-content">
-            <span class="subtitle">by colorlib.</span>
-            <h1 class="title">GO!</h1>
-            <p class="description">Get your freebie template now!</p>
-        </div>
-    </section>
-
-    <section class="builder-section">
-        <div class="container builder-box">
-            <div class="builder-left">
-                <h2>Build your<br>entire<br>website in<br>minutes</h2>
-                <a href="#" class="btn btn-outline">DISCOVER MORE</a>
-            </div>
-            <div class="builder-right">
-                <div class="feature-grid">
-                    <div class="feat-item">
-                        <h3>Great team</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                    <div class="feat-item">
-                        <h3>Online Marketing</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                    <div class="feat-item">
-                        <h3>Modern Design</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                    <div class="feat-item">
-                        <h3>Easy to use</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <section class="builder-section">
+            <div class="container builder-box">
+                <div class="builder-left">
+                    <h2>Створіть свій<br>вебсайт за<br>лічені хвилини</h2>
+                    <a href="services.html" class="btn btn-outline">Дізнатися більше</a>
+                </div>
+                <div class="builder-right">
+                    <div class="feature-grid">
+                        <article class="feat-item">
+                            <h3>Сильна команда</h3>
+                            <p>Досвідчені розробники та дизайнери створюють надійні рішення під задачі вашого бізнесу.</p>
+                        </article>
+                        <article class="feat-item">
+                            <h3>Онлайн-маркетинг</h3>
+                            <p>Допомагаємо залучати нових клієнтів через пошукові системи та соціальні мережі.</p>
+                        </article>
+                        <article class="feat-item">
+                            <h3>Сучасний дизайн</h3>
+                            <p>Чиста типографіка, продумана структура та повна адаптивність під смартфони.</p>
+                        </article>
+                        <article class="feat-item">
+                            <h3>Зручність у роботі</h3>
+                            <p>Інтуїтивна навігація, швидке завантаження сторінок і просте керування контентом.</p>
+                        </article>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="support-section container">
-        <div class="support-content">
-            <img src="assets/images/SliderSection.png" alt="Editor Mockup" class="editor-img">
-            
-            <div class="support-text-wrapper">
-                <div class="support-text">
-                    <h2>Fast support<br>to all our<br>clients. Just give<br>us a shout</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis lorem ut libero malesuada feugiat.</p>
-                    <div class="manager-profile">
-                        <img src="assets/images/icons/person.png" alt="Manager">
-                        <div>
-                            <strong>Michael Smith</strong>
-                            <span>Manager</span>
+        <section class="support-section container">
+            <div class="support-content">
+                <img src="assets/images/SliderSection.png" alt="Інтерфейс панелі підтримки RanGO" class="editor-img">
+
+                <div class="support-text-wrapper">
+                    <div class="support-text">
+                        <h2>Швидка підтримка<br>для всіх клієнтів.<br>Просто напишіть нам</h2>
+                        <p>Наша команда оперативно відповідає на всі технічні запити та допомагає підтримувати стабільну роботу вашого сайту.</p>
+                        <div class="manager-profile">
+                            <img src="assets/images/icons/person.png" alt="Михайло Сміт — менеджер">
+                            <div>
+                                <strong>Михайло Сміт</strong>
+                                <span>Менеджер проєктів</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="vertical-dots">
-                    <span class="v-dot active"></span>
-                    <span class="v-dot"></span>
-                    <span class="v-dot"></span>
-                    <span class="v-dot"></span>
-                    <span class="v-dot"></span>
-                    <span class="v-dot"></span>
-                    <span class="v-dot"></span>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section class="services-section">
-        <div class="container text-center">
-            <h2 class="section-title">RanGO. We take care of your business</h2>
-            <p class="section-subtitle">Explore our services</p>
-            
-            <div class="cards-wrapper">
-                <div class="service-card">
-                    <img src="assets/images/icons/flag.png" alt="Flag">
-                    <h3>Amazing service</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-                <div class="service-card active-card">
-                    <img src="assets/images/icons/clock.png" alt="Clock">
-                    <h3>Amazing service</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <a href="#" class="btn btn-white">DISCOVER MORE</a>
-                </div>
-                <div class="service-card">
-                    <img src="assets/images/icons/Icon.png" alt="Monitor">
-                    <h3>Management</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-                <div class="service-card">
-                    <img src="assets/images/icons/analytic.png" alt="Chart">
-                    <h3>Risk Evaluation</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-            </div>
-
-            <div class="slider-dots">
-                <span class="dot active"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </div>
-        </div>
-    </section>
-
-    <section class="modern-features">
-        <div class="container text-center">
-            <h2 class="section-title">Modern features</h2>
-            
-            <div class="features-flex">
-                <div class="feat-col text-right">
-                    <div class="feat-block">
-                        <h3>Responsive</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur.</p>
-                    </div>
-                    <div class="feat-block">
-                        <h3>Clean code</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur.</p>
-                    </div>
-                </div>
-                <div class="feat-img-col">
-                    <img src="assets/images/cards.png" alt="Tablets">
-                    <br>
-                    <a href="#" class="btn btn-outline" style="margin-top: 20px;">DISCOVER MORE</a>
-                </div>
-                <div class="feat-col text-left">
-                    <div class="feat-block">
-                        <h3>Retina ready</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur.</p>
-                    </div>
-                    <div class="feat-block">
-                        <h3>Great team</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                    <div class="vertical-dots" aria-hidden="true">
+                        <span class="v-dot active"></span>
+                        <span class="v-dot"></span>
+                        <span class="v-dot"></span>
+                        <span class="v-dot"></span>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="cta-section">
-        <div class="container cta-flex">
-            <div class="cta-text">
-                <h2>We love our<br>customers</h2>
-                <p>Cursus, enim a ultrices venenatis, ante magna varius felis, ac sodales turpis lectus a odio.</p>
-            </div>
-            <div class="cta-image">
-                <img src="assets/images/GalaBuilding.png" alt="Gala Building">
-            </div>
-        </div>
-    </section>
+        <section class="services-section">
+            <div class="container text-center">
+                <h2 class="section-title">RanGO. Ми дбаємо про ваш бізнес</h2>
+                <p class="section-subtitle">Ознайомтеся з нашими основними послугами</p>
 
-    <section class="integrate-section container">
-        <div class="integrate-flex">
-            <div class="integrate-images">
-                <img src="assets/images/product.png" alt="Product Cans">
-            </div>
-            <div class="integrate-text">
-                <h2>We integrate the<br>future</h2>
-                <p>Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit amet tellus blandit.</p>
-                <a href="#" class="btn btn-outline">DISCOVER MORE</a>
-            </div>
-        </div>
-    </section>
+                <div class="cards-wrapper">
+                    <article class="service-card">
+                        <svg class="service-card__icon" aria-hidden="true"><use href="assets/images/sprite.svg#icon-flag"></use></svg>
+                        <h3>Якісний сервіс</h3>
+                        <p>Індивідуальний підхід до кожного проєкту та прозорі етапи розробки.</p>
+                    </article>
+                    <article class="service-card active-card">
+                        <svg class="service-card__icon" aria-hidden="true"><use href="assets/images/sprite.svg#icon-clock"></use></svg>
+                        <h3>Швидкий запуск</h3>
+                        <p>Оптимізовані процеси дозволяють запустити сайт у стислі терміни.</p>
+                        <button type="button" class="btn btn-white" data-open-modal>Замовити</button>
+                    </article>
+                    <article class="service-card">
+                        <svg class="service-card__icon" aria-hidden="true"><use href="assets/images/sprite.svg#icon-monitor"></use></svg>
+                        <h3>Менеджмент</h3>
+                        <p>Повний супровід продукту від прототипу до публікації.</p>
+                    </article>
+                    <article class="service-card">
+                        <svg class="service-card__icon" aria-hidden="true"><use href="assets/images/sprite.svg#icon-chart"></use></svg>
+                        <h3>Аналітика</h3>
+                        <p>Оцінка ризиків та оптимізація конверсії для зростання продажів.</p>
+                    </article>
+                </div>
 
-    <section class="newsletter-section">
-        <div class="container text-center">
-            <h2>Subscribe to our newsletter</h2>
-            <p>Cursus, enim a ultrices venenatis, ante magna varius.</p>
-            <form class="newsletter-form">
-                <input type="email" placeholder="Your e-mail address here">
-                <button type="submit" class="btn btn-subscribe-full">SUBSCRIBE</button>
-            </form>
-        </div>
-    </section>
+                <div class="slider-dots" aria-hidden="true">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="modern-features">
+            <div class="container text-center">
+                <h2 class="section-title">Сучасні можливості</h2>
+
+                <div class="features-flex">
+                    <div class="feat-col text-right">
+                        <article class="feat-block">
+                            <h3>Адаптивність</h3>
+                            <p>Коректне відображення на смартфонах, планшетах і моніторах.</p>
+                        </article>
+                        <article class="feat-block">
+                            <h3>Чистий код</h3>
+                            <p>Валідна семантична розмітка для швидкої роботи браузера.</p>
+                        </article>
+                    </div>
+                    <div class="feat-img-col">
+                        <img src="assets/images/cards.png" alt="Приклади адаптивних сторінок RanGO">
+                        <a href="services.html" class="btn btn-outline mt-20">Дізнатися більше</a>
+                    </div>
+                    <div class="feat-col text-left">
+                        <article class="feat-block">
+                            <h3>Чітка графіка</h3>
+                            <p>Оптимізовані зображення та векторні іконки без втрати якості.</p>
+                        </article>
+                        <article class="feat-block">
+                            <h3>Сильна команда</h3>
+                            <p>Постійна підтримка та розвиток вашого вебпроєкту.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container cta-flex">
+                <div class="cta-text">
+                    <h2>Ми цінуємо наших<br>клієнтів</h2>
+                    <p>Будуємо довгострокові партнерські відносини та допомагаємо бізнесу досягати стабільних результатів в онлайні.</p>
+                </div>
+                <div class="cta-image">
+                    <img src="assets/images/GalaBuilding.png" alt="Будівля партнера RanGO">
+                </div>
+            </div>
+        </section>
+
+        <section class="integrate-section container">
+            <div class="integrate-flex">
+                <div class="integrate-images">
+                    <img src="assets/images/product.png" alt="Приклад продукції клієнтів RanGO">
+                </div>
+                <div class="integrate-text">
+                    <h2>Інтегруємо<br>майбутнє</h2>
+                    <p>Впроваджуємо сучасні вебтехнології, інтерактивні компоненти та швидку навігацію для зручності ваших користувачів.</p>
+                    <a href="about.html" class="btn btn-outline">Про компанію</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter-section">
+            <div class="container text-center">
+                <h2>Підпишіться на нашу розсилку</h2>
+                <p>Отримуйте свіжі новини, кейси та поради щодо веброзробки.</p>
+                <form id="newsletterForm" class="newsletter-form" novalidate>
+                    <label for="newsletterEmail" class="sr-only">Електронна пошта</label>
+                    <input id="newsletterEmail" type="email" placeholder="Введіть вашу електронну пошту" required>
+                    <button type="submit" class="btn-subscribe-full">Підписатися</button>
+                </form>
+                <p class="newsletter-status" aria-live="polite"></p>
+            </div>
+        </section>
+    </main>
 
     <footer class="footer">
         <div class="container footer-flex">
             <div class="footer-brand">
-                <a href="#" class="logo text-dark">Ran<span class="text-orange">GO</span></a>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae enim enim. Sed nec dignissim purus.</p>
-                
+                <a href="index.html" class="logo text-dark">Ran<span class="text-orange">GO</span></a>
+                <p>Вебстудія повного циклу. Створюємо швидкі, адаптивні та зрозумілі сайти для вашого бізнесу.</p>
+
                 <div class="social-icons">
-                    <a href="#"><img src="assets/images/icons/pinterest.png" alt="Pinterest"></a>
-                    <a href="#"><img src="assets/images/icons/facebook.png" alt="Facebook"></a>
-                    <a href="#"><img src="assets/images/icons/twitter.png" alt="Twitter"></a>
-                    <a href="#"><img src="assets/images/icons/dribbble.png" alt="Dribbble"></a>
-                    <a href="#"><img src="assets/images/icons/behance.png" alt="Behance"></a>
-                    <a href="#"><img src="assets/images/icons/linkedin.png" alt="LinkedIn"></a>
+                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <svg class="icon" aria-hidden="true"><use href="assets/images/sprite.svg#icon-facebook"></use></svg>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                        <svg class="icon" aria-hidden="true"><use href="assets/images/sprite.svg#icon-twitter"></use></svg>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg class="icon" aria-hidden="true"><use href="assets/images/sprite.svg#icon-linkedin"></use></svg>
+                    </a>
                 </div>
 
-                <p class="copyright">Copyright ©2026 All rights reserved | This template is made with <span style="color: #a0a0a0;">♥</span> by <a href="#" class="colorlib-link">Colorlib</a></p>
+                <p class="copyright">&copy; 2026 RanGO. Усі права захищено.</p>
             </div>
-            
+
             <div class="footer-links">
                 <div class="link-col">
-                    <h3>Services</h3>
-                    <a href="#">Social media</a>
-                    <a href="#">Management</a>
-                    <a href="#">Branding</a>
-                    
-                    <h3 class="mt-30">Aditionals</h3>
-                    <a href="#">Social media</a>
-                    <a href="#">Management</a>
-                    <a href="#">Branding</a>
+                    <h3>Послуги</h3>
+                    <a href="services.html">Веброзробка</a>
+                    <a href="services.html">Менеджмент</a>
+                    <a href="services.html">Брендинг</a>
                 </div>
                 <div class="link-col">
-                    <h3>Menu</h3>
-                    <a href="#">Home</a>
-                    <a href="#">About us</a>
-                    <a href="#">Services</a>
-                    <a href="#">Portfolio</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Contact</a>
-                    <a href="#">Testimonials</a>
+                    <h3>Меню</h3>
+                    <a href="index.html">Головна</a>
+                    <a href="about.html">Про нас</a>
+                    <a href="services.html">Послуги</a>
                 </div>
                 <div class="link-col">
-                    <h3>About us</h3>
-                    <a href="#">The team</a>
-                    <a href="#">History</a>
-                    <a href="#">Company</a>
-                    <a href="#">Support</a>
-                </div>
-                <div class="link-col">
-                    <h3>Community</h3>
-                    <a href="#">Blog</a>
-                    <a href="#">Forums</a>
-                    <a href="#">Q&A</a>
-                    <a href="#">Purposes</a>
+                    <h3>Спільнота</h3>
+                    <a href="about.html">Команда</a>
+                    <a href="404.html">Сторінка 404</a>
                 </div>
             </div>
         </div>
     </footer>
+
+    <div id="contactModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
+        <div class="modal__dialog">
+            <button type="button" class="modal__close" data-close-modal aria-label="Закрити вікно">&times;</button>
+            <h2 id="modalTitle" class="modal__title">Зв'язатися з нами</h2>
+            <form id="contactForm" novalidate>
+                <div class="form-group">
+                    <label for="modalName">Ваше ім'я</label>
+                    <input id="modalName" name="name" type="text" placeholder="Іван Петренко" required>
+                    <p id="nameError" class="form-error"></p>
+                </div>
+                <div class="form-group">
+                    <label for="modalEmail">Електронна пошта</label>
+                    <input id="modalEmail" name="email" type="email" placeholder="name@example.com" required>
+                    <p id="emailError" class="form-error"></p>
+                </div>
+                <div class="form-group">
+                    <label for="modalMessage">Повідомлення</label>
+                    <textarea id="modalMessage" name="message" rows="4" placeholder="Опишіть ваш проєкт..." required></textarea>
+                    <p id="messageError" class="form-error"></p>
+                </div>
+                <button type="submit" class="btn btn-primary">Надіслати</button>
+                <p id="formSuccess" class="form-success" aria-live="polite"></p>
+            </form>
+        </div>
+    </div>
+
+    <button type="button" class="scroll-top" aria-label="Повернутися вгору">
+        <svg class="icon" aria-hidden="true"><use href="assets/images/sprite.svg#icon-arrow-up"></use></svg>
+    </button>
 
 </body>
 </html>
