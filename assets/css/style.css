@@ -51,8 +51,8 @@ img {
 }
 
 .icon {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     display: inline-block;
 }
 
@@ -169,7 +169,7 @@ img {
 .hero {
     min-height: 920px;
     background-color: #1B0B33;
-    background-image: url('../images/background.png');
+    background-image: url('../images/mainMenu/background.webp');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -196,10 +196,10 @@ img {
 .hero .title { font-size: clamp(72px, 12vw, 180px); font-weight: 800; line-height: 1; margin: 10px 0; }
 .hero .description { font-size: 18px; }
 
-/* --- Банер внутрішніх сторінок (About / Services) --- */
+/* --- Банер внутрішніх сторінок --- */
 .page-banner {
     background-color: #1B0B33;
-    background-image: url('../images/background.png');
+    background-image: url('../images/mainMenu/background.webp');
     background-position: center;
     background-size: cover;
     color: #fff;
@@ -232,7 +232,7 @@ img {
     background: transparent;
     border: none;
     color: #fff;
-    cursor: pointer;
+    cursor: default;
 }
 
 .sidebar-text-wrap {
@@ -367,7 +367,7 @@ img {
 .cta-text h2 { font-size: 40px; margin-bottom: 20px; line-height: 1.15; }
 .cta-image { width: 52%; display: flex; align-items: flex-end; }
 
-/* --- Integrate Future (Cans) --- */
+/* --- Integrate Future --- */
 .integrate-section { padding: 100px 15px; }
 .integrate-flex { display: flex; align-items: center; justify-content: center; gap: 70px; }
 .integrate-images img { max-width: 400px; }
@@ -498,19 +498,22 @@ img {
 
 .newsletter-status { margin-top: 14px; min-height: 22px; font-size: 14px; color: #F7941D; }
 
-/* --- Footer --- */
-.footer { padding: 70px 0; border-top: 1px solid #eee; }
+/* --- Footer (як в оригіналі) --- */
+.footer { padding: 80px 0; border-top: 1px solid #eee; }
 .footer-flex { display: flex; justify-content: space-between; align-items: flex-start; gap: 40px; }
-.footer-brand { width: 32%; }
-.footer-brand p { color: #777; font-size: 14px; margin-top: 18px; line-height: 1.7; }
+.footer-brand { width: 30%; }
+.footer-brand p { color: #888; font-size: 14px; margin-top: 20px; max-width: 300px; line-height: 1.8; }
 
-.social-icons { display: flex; gap: 16px; margin: 22px 0; color: #777; }
+.social-icons { display: flex; gap: 18px; margin: 24px 0; color: #a0a0a0; }
 .social-icons a:hover { color: #492B7C; }
 
-.copyright { margin-top: 16px; font-size: 13px; color: #999; }
-.footer-links { width: 62%; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-.link-col h3 { color: #1B0D37; margin-bottom: 16px; font-size: 16px; font-weight: 600; }
-.link-col a { display: block; color: #777; text-decoration: none; margin-bottom: 10px; font-size: 14px; transition: 0.2s; }
+.copyright { margin-top: 20px; font-size: 13px; color: #a0a0a0; }
+.colorlib-link { color: #007bff; text-decoration: none; font-weight: 600; }
+.colorlib-link:hover { text-decoration: underline; }
+
+.footer-links { width: 65%; display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+.link-col h3 { color: #1B0D37; margin-bottom: 18px; font-size: 16px; font-weight: 600; }
+.link-col a { display: block; color: #888; text-decoration: none; margin-bottom: 12px; font-size: 14px; transition: 0.2s; }
 .link-col a:hover { color: #F7941D; }
 
 /* --- Modal --- */
@@ -596,7 +599,7 @@ img {
 .error-code { font-size: clamp(72px, 14vw, 130px); font-weight: 800; color: #492B7C; line-height: 1; }
 .error-text { max-width: 460px; color: #777; margin: 16px 0 28px; }
 
-/* --- Адаптивність (Tablet & Mobile) --- */
+/* --- Адаптивність --- */
 @media (max-width: 1024px) {
     .header-inner { padding: 0 24px; }
     .vertical-sidebar { display: none; }
@@ -614,12 +617,13 @@ img {
     .feat-col, .feat-img-col, .cta-text, .cta-image, .integrate-text, .footer-brand, .footer-links {
         width: 100%;
     }
+    .footer-brand p { margin-left: auto; margin-right: auto; }
+    .footer-links { grid-template-columns: repeat(2, 1fr); text-align: left; }
     .text-right, .text-left { text-align: center; }
     .cta-text { padding: 50px 0 20px; }
     .vertical-dots { display: none; }
     .support-text p { margin-left: auto; margin-right: auto; }
-    .manager-profile { justify-content: center; }
-    .social-icons { justify-content: center; }
+    .manager-profile, .social-icons { justify-content: center; }
 }
 
 @media (max-width: 768px) {
@@ -645,6 +649,7 @@ img {
     .grid-3,
     .footer-links {
         grid-template-columns: 1fr;
+        text-align: center;
     }
 
     .newsletter-form { flex-direction: column; }
