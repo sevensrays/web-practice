@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Бургер-меню
+  // Mobile burger menu
   const burger = document.querySelector(".burger");
   const nav = document.querySelector(".nav");
 
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Кнопка "Вгору"
+  // Scroll-to-top button
   const scrollTopBtn = document.querySelector(".scroll-top");
   if (scrollTopBtn) {
     window.addEventListener("scroll", () => {
@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Модальне вікно + валідація
+  // Modal dialog and form validation
   const modal = document.getElementById("contactModal");
   const openBtns = document.querySelectorAll("[data-open-modal]");
   const closeBtn = document.querySelector("[data-close-modal]");
@@ -36,6 +36,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const closeModal = () => {
     if (!modal) return;
+    // Blur focused element inside modal before hiding it to avoid aria-hidden focus warnings
+    if (document.activeElement && modal.contains(document.activeElement)) {
+      document.activeElement.blur();
+    }
     modal.classList.remove("open");
     modal.setAttribute("aria-hidden", "true");
   };
@@ -91,7 +95,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Валідація розсилки
+  // Newsletter form validation
   const newsletterForm = document.getElementById("newsletterForm");
   if (newsletterForm) {
     newsletterForm.addEventListener("submit", (e) => {
